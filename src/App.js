@@ -1,6 +1,6 @@
 
 import './App.css';
-import counerReducer from './counerReducer';
+import counterReducer from './counterReducer';
 
 function App() {
   return (
