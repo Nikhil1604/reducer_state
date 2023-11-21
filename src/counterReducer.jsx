@@ -7,6 +7,8 @@ function countChange (state,action){
             return{count : state.count+1};
         case 'SUB':
             return {count: state.count-1};
+        case 'RESET':
+            return { count:0}
         default:
             return state;
     }
@@ -21,6 +23,7 @@ const CounterReducer = () => {
         <p>Count: { state.count}</p>
         <button onClick={()=> dispatch({ type:'ADD'})}>Inrement</button>
         <button onClick={()=> dispatch({ type:'SUB'})}>Decrement</button>
+        <button onClick={()=> dispatch({type:'RESET'})}>Reset</button>
     </div>
   )
 }
