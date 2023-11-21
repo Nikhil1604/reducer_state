@@ -12,7 +12,7 @@ function countChange (state,action){
     }
 }
 
-const counterReducer = () => {
+const CounterReducer = () => {
 
     const [state,dispatch]=useReducer(countChange,{count:0})
 
@@ -25,4 +25,4 @@ const counterReducer = () => {
   )
 }
 
-export default counterReducer
+export default CounterReducer

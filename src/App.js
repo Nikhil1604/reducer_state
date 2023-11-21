@@ -1,11 +1,12 @@
 
 import './App.css';
-import counterReducer from './counterReducer';
+import CounterReducer from './counterReducer';
 
 function App() {
   return (
     <>
-    <counterReducer/>
+    <p>Hello</p>
+    <CounterReducer />
     </>
     );
 }
